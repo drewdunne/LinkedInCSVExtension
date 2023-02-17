@@ -14,10 +14,10 @@ A CSV will be downloaded of all employees you have revealed including their:
 You can then import this CSV into your favorite tools such as Google Sheets, Notion, and more.
 
 # Why Did I Make This?
-If you want to see the structure of a company, and how their employees are distributed across the organization, it's very time-consuming to do! By sorting your CSV file, you can get a rough idea of how the company has distributed their workforce in just 3-5 minutes (granted, this is a very rough estimate!).
+I was curious to see how certain businesses allocate their people, especially in tech. Manually investigating this is pretty time-consuming though. By automatically exporting LinkedIn employees to a CSV file, I can get an understanding of how a company has allocated their workforce (by discipline) in just a few minutes. It's only a rough understanding, and I still need to manually browse the CSV data, but having the ability to sort within a CSV-file makes this process **much** quicker than doing it on LinkedIn.
 
 # Future Features
 Three features come to mind:
-- Bucketing jobs based on keywords into disciplines (Customer Support, Marketing, Engineering, Product, PM, etc)
-- Executive Export (export only the executives)
+- Bucketing jobs based on keywords into disciplines, allowing for quicker analysis in the CSV file.
 - Automated Scrolling (can be added in a few hours via puppeteer, so if anyone uses this and would like the feature please just let me know)
+- Executive Export (export only the executives)
