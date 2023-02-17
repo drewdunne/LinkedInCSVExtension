@@ -1,8 +1,8 @@
+import exportPageDataAsCSV from './main';
+
 console.log("loaded popup.js")
 
 const button = document.getElementById("download-button");
-console.log(document);
-console.log(button);
 
 button.addEventListener("click", async() => {
   console.log("clicked!")
@@ -10,17 +10,12 @@ button.addEventListener("click", async() => {
 
   const injection = {
     target: { tabId: tab.id ? tab.id : -1 },
-    func: log,
+    func: exportPageDataAsCSV,
     args: [],
   }
 
   chrome.scripting.executeScript(injection)
 });
-
-function log() {
-  console.log("hello!");
-}
-
 
 // function convertToCSV(objArray) {
 //   var array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;

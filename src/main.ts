@@ -1,7 +1,8 @@
 
-export default function main() {
-  const peopleCardElements = getPeopleCardElements();
-  processSingleCard(peopleCardElements[0])
+export default function exportPageDataAsCSV() {
+  console.log("Running Exporter...");
+  // const peopleCardElements = getPeopleCardElements();
+  // processSingleCard(peopleCardElements[0])
 }
 
 function processSingleCard(peopleCard: Element) {
