@@ -9,8 +9,6 @@ import { Person } from './linkedIn';
  */
 export default function exportCSVFile(headers: any, data: Person[], fileTitle: string | undefined) {
 
-  console.log("inside exportCSVFile")
-
   if (headers) {
     data.unshift(headers);
   }

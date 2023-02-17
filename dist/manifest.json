@@ -21,12 +21,6 @@
   "background": {
     "service_worker": "background.js"
  },
- "web_accessible_resources": [
-  {
-    "resources": [ "*" ],
-    "matches": [ "https://linkedin.com/*" ]
-  }
-],
     "host_permissions": [
         "https://www.linkedin.com/*"
     ]
