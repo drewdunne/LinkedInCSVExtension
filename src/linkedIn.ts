@@ -4,6 +4,7 @@ export type Person = {
   Name: string | undefined,
   Title: string | undefined,
   Connections: string | undefined,
+  Company: string | undefined,
 }
 
 /**
@@ -15,7 +16,8 @@ export default function exportLinkedInCompanyEmployees() {
   const headers = {
     Name: "Name",
     Title: "Title",
-    Connections: "Connections"
+    Connections: "Connections",
+    Company: "Company"
   }
 
   const companyName = document.getElementsByClassName("org-top-card__primary-content")[0].children[1].children[0].children[0].textContent?.toLowerCase().trim().trimEnd();
@@ -25,7 +27,7 @@ export default function exportLinkedInCompanyEmployees() {
     const name = peopleCardElements[i].getElementsByClassName("org-people-profile-card__profile-title")[0].textContent?.trim().trimEnd();
     const title = peopleCardElements[i].getElementsByClassName("artdeco-entity-lockup__subtitle")[0].getElementsByClassName("ember-view")[0].textContent?.trim().trimEnd();
     const connections = peopleCardElements[i].children[1].getElementsByClassName("ember-view")[0].textContent?.trim();
-    people.push({Name: name, Title: title, Connections: connections})
+    people.push({Name: name, Title: title, Connections: connections, Company: companyName})
   }
 
   exportCSVFile(headers, people, companyName + "_employees");
