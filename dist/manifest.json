@@ -19,7 +19,7 @@
       "default_popup": "popup.htm"
     },
   "background": {
-    "service_worker": "bundle.js"
+    "service_worker": "background.js"
  },
     "host_permissions": [
         "https://www.linkedin.com/*"
